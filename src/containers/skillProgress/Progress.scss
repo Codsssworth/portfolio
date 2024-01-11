@@ -1,0 +1,142 @@
+@import "../../_globalColor";
+@font-face {
+  font-family: pro;
+  src: url("../../assets/fonts/TheBlacklist.woff")format("woff");
+}
+
+.meter {
+  height: 20px;
+  position: relative;
+  background: $progressBarBackground;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: $progressBarSpanBG;
+  position: relative;
+  overflow: hidden;
+}
+#pc {
+  display: inline-block;
+  text-align:center;
+  text-justify:distribute-all-lines;
+  text-wrap: nowrap;
+  list-style-type:none;
+ text-emphasis-color: #909090;;
+
+}
+#ffi{
+  font-family: "pro";
+  font-size: 70px;
+  font-weight: 100;
+
+}
+.skill {
+  line-height: 2.5vw;
+  margin-right: 2rem;
+
+}
+
+.skill-bars {
+  
+  font-size: 28px;
+  width: 40%;
+}
+.skills-container {
+  display: flex;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 1rem;
+}
+.skills-container > * {
+  flex: 1;
+  margin-bottom: 5rem;
+  margin-top: -13rem;
+}
+.skills-image{
+  display:block;
+  margin-left: 5rem;
+  margin-right: 0rem;
+  margin-bottom: 2rem;
+  padding:10px;
+}
+.skills-image > img {
+  
+  max-width: 90%;
+  height: auto;
+}
+.pie{
+  display: contents;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 5rem;
+  text-align: center;
+  text-wrap: nowrap;
+}
+.chart{
+  display: flex;
+  margin: 0px auto;
+  text-wrap: nowrap;
+  border-radius: 20px;
+  
+  
+}
+
+/* Media Query */
+
+@media (max-width: 1456px) {
+  .skills-container {
+    margin-top: 3rem;
+  }
+  .skills-bar {
+    line-height: 4rem;
+  }
+  .skills-image {
+    
+    display: none;
+    order: 2;
+  }
+  .pie{
+    display:flex;
+    width: 120%;
+    padding-right: 0px;
+    margin-left: -9rem;
+    margin-right: -25rem;
+    margin-top: 14rem;
+    *padding: 0px;
+   
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
+  .skills-bar {
+    line-height: 3rem;
+    margin: 20px;
+  }
+  .skills-image {
+ 
+    display: none;
+    order: 2;
+  }
+  .pie{
+    display: inline-flex;
+    padding: 1%;
+    width: 120%;
+    margin-right: 2rem;
+    margin-top: 8rem;
+    margin-bottom: -8rem;
+
+   
+  }
+}

@@ -1,0 +1,14 @@
+@import "../_globalColor";
+
+.dark-mode {
+  background-color: $darkBackground;
+  color: white;
+  transition: "0.1s";
+}
+/* Media Query */
+@media (max-width: 1380px) {
+  #maind{
+    margin: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }}

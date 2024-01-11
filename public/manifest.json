@@ -1,0 +1,25 @@
+{
+  "short_name": "MyPortfolio",
+  "name": "Bismay Kumar",
+  "icons": [
+    {
+      "src": "robot.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/robot.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/robot.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#6c63ff",
+  "background_color": "#ffffff"
+}

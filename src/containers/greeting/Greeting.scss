@@ -1,0 +1,149 @@
+@import "../../_globalColor";
+@font-face {
+  font-family: style;
+  src: url("../../assets/fonts/Dreamer1.woff")format("woff");
+}
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+.greet-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.greeting-main {
+  display: flex;
+}
+
+.subTitle {
+  color: $subTitle !important;
+}
+
+.greeting-main {
+  display: flex;
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.button-greeting-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.greeting-text {
+  font-size: 80px;
+  line-height: 1.1;
+  font-family:"style";
+  word-spacing: 0.1rem;
+  font-style: italic;
+  font-size: 130px;
+  font-weight: 100;
+  color: $textColor !important;
+}
+
+.greeting-text-p {
+  font-size: 30px;
+  line-height: 40px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 50;
+  font-size: 30px;
+}
+#clip{
+  margin-right: -2rem;
+}
+.greeting-image-div > img { 
+  max-width: 100%;
+  height: auto;
+}
+
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  margin-left: -3.5rem;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 80%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .greeting-text {
+    display: inline;
+    font-size: 50px;
+    padding: 0;
+  }
+  .wave-emoji{
+    display:none;
+  }
+  .greeting-text-p {
+    display: ruby-base;
+    font-size: 20px;
+  }
+  .greeting-image-div {
+   
+    display:inline-flex;
+    padding: 0%;
+    width: 20%;
+    margin: 0rem;
+    margin-left: 1rem;
+   
+  }
+}
+@media (max-width: 768px) {
+  .button-greeting-div {
+    justify-content: space-around;
+  }
+  .greeting-text {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+  .greeting-main {
+    display: block;
+  }
+  .greeting-image-div {
+    height: 256px;
+    display: inline;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+    width: auto;
+  }
+}
